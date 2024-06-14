@@ -32,7 +32,7 @@ const App = () => {
 
   //fetch Issues
   const fetchIssues = async () => {
-    const { status, message, result } = await getIssues();
+    const { status, result } = await getIssues();
     console.log(result);
     status === "success" && setIssues(result);
   };
@@ -50,7 +50,7 @@ const App = () => {
   }, []);
 
   return (
-    <Container className="p-2">
+    <Container className="p-2 mt-4">
       <h3 className="text-center fw-bold">Issue Form</h3>
       <div className="d-flex justify-content-center">
         <Form onSubmit={handleSubmit}>

@@ -44,7 +44,7 @@ router.get("/", async (req, res, next) => {
     next(error);
   }
 });
-// create Issue
+// update Issue
 
 router.patch("/", async (req, res, next) => {
   try {
